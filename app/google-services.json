@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1087465001991",
+    "project_id": "practica3-45150",
+    "storage_bucket": "practica3-45150.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087465001991:android:7050a8dcc9ae59b3c706a2",
+        "android_client_info": {
+          "package_name": "com.example.practica02_alarmas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHz5eHS_Fe56AmtAKbiZH2KEYeyQUsa7g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087465001991:android:2681ad74e180eb37c706a2",
+        "android_client_info": {
+          "package_name": "com.example.practica03_notificaciones_firebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHz5eHS_Fe56AmtAKbiZH2KEYeyQUsa7g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
