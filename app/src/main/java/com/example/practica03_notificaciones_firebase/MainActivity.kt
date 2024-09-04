@@ -2,10 +2,12 @@ package com.example.practica03_notificaciones_firebase
 
 import android.app.NotificationChannel
 import android.app.NotificationManager
+import android.content.ContentValues.TAG
 import android.content.Context
 import android.content.Intent
 import android.os.Build
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
@@ -18,6 +20,8 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.practica03_notificaciones_firebase.activities.Products
 import com.example.practica03_notificaciones_firebase.models.Notifications
 import com.example.practica03_notificaciones_firebase.models.State
+import com.google.android.gms.tasks.OnCompleteListener
+import com.google.firebase.messaging.FirebaseMessaging
 
 class MainActivity : AppCompatActivity() {
     
@@ -40,6 +44,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
         createNotificationChannel()
+        getFirebaseToken()
 
         state.initialize()
 
@@ -63,6 +68,23 @@ class MainActivity : AppCompatActivity() {
                 loginAttempts++
             }
         }
+    }
+
+    private fun getFirebaseToken() {
+        FirebaseMessaging.getInstance().token.addOnCompleteListener(OnCompleteListener { task ->
+            if (!task.isSuccessful) {
+                Log.w(TAG, "Fetching FCM registration token failed", task.exception)
+                return@OnCompleteListener
+            }
+
+            // Get new FCM registration token
+            val token = task.result
+
+            // Log and toast
+            //val msg = getString(R.string.msg_token_fmt, token)
+            Log.d(TAG, "token: $token")
+            //Toast.makeText(baseContext, msg, Toast.LENGTH_SHORT).show()
+        })
     }
     
     
