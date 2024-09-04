@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/add_to_cart"
+        android:icon="@drawable/baseline_shopping_cart_24"
+        android:title="@string/a_adir_al_carrito_resource"
+        />
+
+    <item
+        android:id="@+id/discount_notification"
+        android:icon="@drawable/baseline_shopping_cart_24"
+        android:title="@string/avisarme_cuando_est_en_descuento"
+        />
+</menu>

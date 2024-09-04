@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Practica03-Notificaciones-Firebase</string>
+    <string name="imageViewDescription">image</string>
+    <string name="menu_item_title">Carrito</string>
+    <string name="addToCartButtonContentDescription">AddToCartButton</string>
+    <string name="a_adir_al_carrito_resource">Añadir al carrito</string>
+    <string name="eliminar_del_carrito">Eliminar del carrito</string>
+    <string name="avisarme_cuando_est_en_descuento">Avisarme cuando esté en descuento</string>
+</resources>
